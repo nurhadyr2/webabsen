@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #000E29;
+    color: #fff;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(135deg, #001F5C, #00308F);
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.navbar .logo span {
+    color: #2971FF;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar .nav-links a {
+    color: #ccc;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.aktif {
+    background: #0041C2;
+    color: #fff;
+}
+
+.navbar .user-info {
+    font-size: 13px;
+    color: #aac4ff;
+}
+
+/* LOGIN PAGE */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(160deg, #000000 0%, #000E29 40%, #001F5C 100%);
+}
+
+.login-box {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(41,113,255,0.3);
+    border-radius: 16px;
+    padding: 40px;
+    width: 380px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.login-box h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+.login-box p.subtitle {
+    text-align: center;
+    font-size: 13px;
+    color: #8aabff;
+    margin-bottom: 28px;
+}
+
+.login-box .logo-icon {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+/* FORM */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    color: #aac4ff;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(41,113,255,0.4);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #fff;
+    font-size: 14px;
+    transition: border 0.2s;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2971FF;
+    background: rgba(41,113,255,0.1);
+}
+
+.form-group select option {
+    background: #001F5C;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0041C2, #2971FF);
+    color: #fff;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0052F5, #2971FF);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(41,113,255,0.4);
+}
+
+.btn-success {
+    background: #00a854;
+    color: #fff;
+}
+
+.btn-success:hover { background: #00c962; }
+
+.btn-danger {
+    background: #c0392b;
+    color: #fff;
+}
+
+.btn-danger:hover { background: #e74c3c; }
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #2971FF;
+    color: #2971FF;
+}
+
+.btn-outline:hover {
+    background: #2971FF;
+    color: #fff;
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+/* MAIN CONTENT */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.page-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+.page-title span {
+    color: #2971FF;
+}
+
+.page-subtitle {
+    font-size: 13px;
+    color: #8aabff;
+    margin-bottom: 24px;
+}
+
+/* CARDS */
+.card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(41,113,255,0.2);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* STATS CARDS */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, rgba(0,48,143,0.6), rgba(0,65,194,0.4));
+    border: 1px solid rgba(41,113,255,0.25);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-card .number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2971FF;
+}
+
+.stat-card .label {
+    font-size: 12px;
+    color: #8aabff;
+    margin-top: 4px;
+}
+
+/* TABLE */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead th {
+    background: rgba(0,48,143,0.7);
+    color: #aac4ff;
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tbody td {
+    padding: 12px 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    color: #dde8ff;
+}
+
+tbody tr:hover {
+    background: rgba(41,113,255,0.08);
+}
+
+/* BADGE STATUS */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.badge-hadir   { background: rgba(0,168,84,0.2);  color: #00e676; border: 1px solid #00a854; }
+.badge-izin    { background: rgba(255,193,7,0.2);  color: #ffc107; border: 1px solid #ffc107; }
+.badge-sakit   { background: rgba(82,180,255,0.2); color: #82b4ff; border: 1px solid #4c9fff; }
+.badge-alpha   { background: rgba(192,57,43,0.2);  color: #ff6b6b; border: 1px solid #c0392b; }
+.badge-aktif   { background: rgba(0,168,84,0.15);  color: #00e676; }
+.badge-selesai { background: rgba(150,150,150,0.15); color: #aaa; }
+
+/* ALERT */
+.alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.alert-success {
+    background: rgba(0,168,84,0.15);
+    border: 1px solid #00a854;
+    color: #00e676;
+}
+
+.alert-error {
+    background: rgba(192,57,43,0.15);
+    border: 1px solid #c0392b;
+    color: #ff6b6b;
+}
+
+.alert-info {
+    background: rgba(41,113,255,0.15);
+    border: 1px solid #2971FF;
+    color: #82b4ff;
+}
+
+/* MATKUL GRID */
+.matkul-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.matkul-card {
+    background: linear-gradient(135deg, rgba(0,31,92,0.8), rgba(0,48,143,0.5));
+    border: 1px solid rgba(41,113,255,0.25);
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.matkul-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(41,113,255,0.2);
+    border-color: rgba(41,113,255,0.5);
+}
+
+.matkul-card .kode {
+    font-size: 11px;
+    color: #2971FF;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.matkul-card .nama {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.matkul-card .info {
+    font-size: 12px;
+    color: #8aabff;
+    display: flex;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+/* PERTEMUAN LIST */
+.pertemuan-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background 0.2s;
+}
+
+.pertemuan-item:hover {
+    background: rgba(41,113,255,0.08);
+}
+
+.pertemuan-item .pertemuan-info .nomor {
+    font-size: 12px;
+    color: #2971FF;
+    font-weight: 700;
+}
+
+.pertemuan-item .pertemuan-info .topik {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin: 2px 0;
+}
+
+.pertemuan-item .pertemuan-info .tanggal {
+    font-size: 12px;
+    color: #8aabff;
+}
+
+/* ABSEN SUDAH/BELUM */
+.sudah-absen {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #00e676;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container { padding: 20px 14px; }
+    .navbar { padding: 0 16px; }
+    .navbar .user-info { display: none; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .matkul-grid { grid-template-columns: 1fr; }
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #3a5080;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
