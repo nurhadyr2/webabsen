@@ -95,6 +95,6 @@ $total_matkul = mysqli_num_rows($hasil_matkul);
     </div>
 </div>
 
-<div class="footer">Sistem Absensi Kampus 2024</div>
+<div class="footer">Sistem Absensi Kampus 2026</div>
 </body>
 </html>

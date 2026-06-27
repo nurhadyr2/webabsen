@@ -91,6 +91,6 @@ $hasil = mysqli_query($conn, $sql);
     <a href="dashboard_mahasiswa.php" class="btn btn-outline">Kembali ke Dashboard</a>
 </div>
 
-<div class="footer">Sistem Absensi Kampus 2024</div>
+<div class="footer">Sistem Absensi Kampus 2026</div>
 </body>
 </html>

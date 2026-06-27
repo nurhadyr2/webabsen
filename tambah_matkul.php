@@ -115,7 +115,7 @@ $daftar_mk = mysqli_fetch_all(mysqli_query($conn,
                 </div>
                 <div class="form-group">
                     <label>Semester</label>
-                    <input type="text" name="semester" placeholder="Contoh: Ganjil 2024/2025" required>
+                    <input type="text" name="semester" placeholder="Contoh: Ganjil 2025/2026" required>
                 </div>
                 <button type="submit" class="btn btn-primary">Tambah Mata Kuliah</button>
             </form>
@@ -152,6 +152,6 @@ $daftar_mk = mysqli_fetch_all(mysqli_query($conn,
     <a href="dashboard_dosen.php" class="btn btn-outline" style="margin-top:10px;">Kembali ke Dashboard</a>
 </div>
 
-<div class="footer">Sistem Absensi Kampus 2024</div>
+<div class="footer">Sistem Absensi Kampus 6</div>
 </body>
 </html>

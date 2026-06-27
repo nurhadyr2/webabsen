@@ -57,7 +57,7 @@ $persen_hadir = $stat['total_pertemuan'] > 0
 
 <div class="container">
     <div class="page-title">Selamat datang, <span><?= explode(' ', $_SESSION['nama'])[0] ?></span>!</div>
-    <div class="page-subtitle">Semester Ganjil 2024/2025</div>
+    <div class="page-subtitle">Semester Ganjil 2025/2026</div>
 
     <div class="stats-grid">
         <div class="stat-card">
@@ -118,6 +118,6 @@ $persen_hadir = $stat['total_pertemuan'] > 0
     </div>
 </div>
 
-<div class="footer">Sistem Absensi Kampus 2024</div>
+<div class="footer">Sistem Absensi Kampus 6</div>
 </body>
 </html>

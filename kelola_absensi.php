@@ -153,6 +153,6 @@ $pertemuan_list = mysqli_fetch_all(
     <a href="dashboard_dosen.php" class="btn btn-outline">Kembali ke Dashboard</a>
 </div>
 
-<div class="footer">Sistem Absensi Kampus 2024</div>
+<div class="footer">Sistem Absensi Kampus 2026</div>
 </body>
 </html>

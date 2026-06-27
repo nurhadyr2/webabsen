@@ -188,7 +188,7 @@ $daftar = mysqli_query($conn, $sql_mhs);
     <a href="dashboard_dosen.php" class="btn btn-outline" style="margin-top:10px;">Kembali</a>
 </div>
 
-<div class="footer">Sistem Absensi Kampus 2024</div>
+<div class="footer">Sistem Absensi Kampus 2026</div>
 
 <script>
 function isiForm(id, nama, uts, uas, tugas) {

@@ -79,17 +79,17 @@ INSERT INTO users (nim_nip, nama, password, role) VALUES
 ('2021003', 'Bima Prasetyo', '$2y$10$JCpU8iaDpdBQY0V7ndjxMOMVaQ4yNe02h.Wnnd0SHNdFbCeMwo0Zy', 'mahasiswa');
 
 INSERT INTO mata_kuliah (kode_mk, nama_mk, sks, dosen_id, semester) VALUES
-('IF101', 'Algoritma & Pemrograman', 3, 1, 'Ganjil 2024/2025'),
-('IF102', 'Basis Data', 3, 1, 'Ganjil 2024/2025'),
-('IF103', 'Jaringan Komputer', 2, 2, 'Ganjil 2024/2025');
+('IF101', 'Metereology', 3, 1, 'Ganjil 2025/2026'),
+('IF102', 'Rules and Relugation', 3, 1, 'Ganjil 2025/2026'),
+('IF103', 'Air Law', 2, 2, 'Ganjil 2025/2026');
 
 INSERT INTO pertemuan (mata_kuliah_id, pertemuan_ke, topik, tanggal) VALUES
-(1, 1, 'Pengenalan Algoritma', '2024-09-02'),
-(1, 2, 'Tipe Data & Variabel', '2024-09-09'),
-(1, 3, 'Percabangan IF-ELSE', '2024-09-16'),
-(2, 1, 'Pengenalan Basis Data', '2024-09-03'),
-(2, 2, 'Entity Relationship Diagram', '2024-09-10'),
-(3, 1, 'Pengenalan Jaringan', '2024-09-04');
+(1, 1, 'Pengenalan Algoritma', '2026-09-02'),
+(1, 2, 'Tipe Data & Variabel', '2026-09-09'),
+(1, 3, 'Percabangan IF-ELSE', '2026-09-16'),
+(2, 1, 'Pengenalan Basis Data', '2026-09-03'),
+(2, 2, 'Entity Relationship Diagram', '2026-09-10'),
+(3, 1, 'Pengenalan Jaringan', '2026-09-04');
 
 INSERT INTO enrollment (mahasiswa_id, mata_kuliah_id) VALUES
 (3, 1), (3, 2), (3, 3),

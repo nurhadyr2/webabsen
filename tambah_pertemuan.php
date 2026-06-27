@@ -138,6 +138,6 @@ $daftar = mysqli_query($conn, "SELECT * FROM pertemuan WHERE mata_kuliah_id = $m
     <a href="dashboard_dosen.php" class="btn btn-outline">Kembali ke Dashboard</a>
 </div>
 
-<div class="footer">Sistem Absensi Kampus 2024</div>
+<div class="footer">Sistem Absensi Kampus 6</div>
 </body>
 </html>

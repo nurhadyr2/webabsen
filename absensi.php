@@ -194,6 +194,6 @@ $persen = $rekap['total'] > 0 ? round(($rekap['hadir'] / $rekap['total']) * 100)
     <a href="dashboard_mahasiswa.php" class="btn btn-outline">Kembali ke Dashboard</a>
 </div>
 
-<div class="footer">Sistem Absensi Kampus 2024</div>
+<div class="footer">Sistem Absensi Kampus 2026</div>
 </body>
 </html>
