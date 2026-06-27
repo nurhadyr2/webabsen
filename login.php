@@ -70,11 +70,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <button type="submit" class="btn btn-primary">Masuk</button>
         </form>
 
-        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 12px; color: #5a7ab0;">
-            <strong style="color:#8aabff;">Akun Demo (password: password123)</strong><br><br>
-            Dosen: D001 / D002<br>
-            Mahasiswa: 2021001 / 2021002 / 2021003
-        </div>
     </div>
 </div>
 </body>
