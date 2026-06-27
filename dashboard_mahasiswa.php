@@ -118,6 +118,6 @@ $persen_hadir = $stat['total_pertemuan'] > 0
     </div>
 </div>
 
-<div class="footer">Sistem Absensi Kampus 6</div>
+<div class="footer">Sistem Absensi Kampus 2026</div>
 </body>
 </html>
